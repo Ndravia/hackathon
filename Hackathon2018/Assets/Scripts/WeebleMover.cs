@@ -5,14 +5,6 @@ using UnityEngine;
 public class WeebleMover : MonoBehaviour
 {
 	private Vector3 _direction;
-	private Spawner.Team _team;
-	private Vector3 _startPosition; 
-	// Use this for initialization
-	void Start ()
-	{
-		_startPosition = transform.position;
-		
-	}
 
 	private void OnTriggerEnter(Collider other)
 	{
@@ -28,7 +20,7 @@ public class WeebleMover : MonoBehaviour
 		transform.position = transform.position + (dt * velocity * _direction);
 	}
 
-	public void Init(Spawner.Team t, Spawner.Direction d)
+	public void Init(Spawner.Direction d)
 	{
 		if (d == Spawner.Direction.back)
 		{
@@ -38,7 +30,5 @@ public class WeebleMover : MonoBehaviour
 		{
 			_direction = Vector3.forward;
 		}
-
-		_team = t;
 	}
 }

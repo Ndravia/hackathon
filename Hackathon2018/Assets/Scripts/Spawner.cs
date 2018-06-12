@@ -4,19 +4,12 @@ using UnityEngine;
 
 public class Spawner : MonoBehaviour
 {
-	public enum Team
-	{
-		TeamA, 
-		TeamB,
-	}
-
 	public enum Direction
 	{
 		back,
 		forward,
 	}
 
-	public Team TeamWeeble;
 	public Direction WeebleDirection;
 	public GameObject MeleeWeeblePrefab;
 	public GameObject HealerWeeblePrefab;
@@ -43,10 +36,7 @@ public class Spawner : MonoBehaviour
 		GameObject weeble = Instantiate(prefab);
 		weeble.transform.position = location.position;
 		WeebleMover mover = weeble.GetComponent<WeebleMover>();
-		mover.Init(TeamWeeble, WeebleDirection);
+		mover.Init(WeebleDirection);
 	}
-	// Update is called once per frame
-	void Update () {
-		
-	}
+
 }
