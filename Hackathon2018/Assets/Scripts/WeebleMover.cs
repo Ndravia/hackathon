@@ -11,33 +11,26 @@ public class WeebleMover : MonoBehaviour
 	void Start ()
 	{
 		_startPosition = transform.position;
-
+		
 	}
-	
+
+	private void OnTriggerEnter(Collider other)
+	{
+		_direction = Vector3.zero;
+	}
+
 	// Update is called once per frame
 	void Update ()
-	{
-		Vector3 traveled = transform.position - _startPosition;
-		float Distance = traveled.magnitude;
-		
-		if (Distance < 10)
-		{
-			
-			var dt = Time.deltaTime;
-			var velocity = 1.0f;
-		
-			transform.position = transform.position + (dt * velocity * _direction);
-
-		}
-		else
-		{
-			
-		}
+	{		
+		var dt = Time.deltaTime;
+		var velocity = 1.0f;
+	
+		transform.position = transform.position + (dt * velocity * _direction);
 	}
 
-	public void Init(Spawner.Team team, Spawner.Direction direction)
+	public void Init(Spawner.Team t, Spawner.Direction d)
 	{
-		if (direction == Spawner.Direction.back)
+		if (d == Spawner.Direction.back)
 		{
 			_direction = Vector3.back;
 		}
@@ -46,6 +39,6 @@ public class WeebleMover : MonoBehaviour
 			_direction = Vector3.forward;
 		}
 
-		_team = team;
+		_team = t;
 	}
 }
