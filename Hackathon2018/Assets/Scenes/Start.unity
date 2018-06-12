@@ -123,7 +123,7 @@ GameObject:
   - component: {fileID: 118543493}
   - component: {fileID: 118543492}
   m_Layer: 0
-  m_Name: Spawner
+  m_Name: Spawner A
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -140,6 +140,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4e217ceba28d043f6bf7b70493c06f04, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  TeamWeeble: 0
+  WeebleDirection: 1
   MeleeWeeblePrefab: {fileID: 1809620607006874, guid: bae30d45da62b477da88a55961786359,
     type: 2}
   HealerWeeblePrefab: {fileID: 1982337101655320, guid: 50bbcb2e8fb5c472bb949e4336b53eea,
@@ -153,11 +155,6 @@ MonoBehaviour:
   Location3: {fileID: 425541927}
   Location4: {fileID: 1992263327}
   Location5: {fileID: 1787757322}
-  Location6: {fileID: 1844438658}
-  Location7: {fileID: 812981478}
-  Location8: {fileID: 335588352}
-  Location9: {fileID: 697546580}
-  Location10: {fileID: 886907714}
 --- !u!4 &118543493
 Transform:
   m_ObjectHideFlags: 0
@@ -199,6 +196,61 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &188373151
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 188373152}
+  - component: {fileID: 188373153}
+  m_Layer: 0
+  m_Name: Spawner B
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &188373152
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 188373151}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 3, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 13
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &188373153
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 188373151}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4e217ceba28d043f6bf7b70493c06f04, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  TeamWeeble: 1
+  WeebleDirection: 0
+  MeleeWeeblePrefab: {fileID: 1809620607006874, guid: bae30d45da62b477da88a55961786359,
+    type: 2}
+  HealerWeeblePrefab: {fileID: 1982337101655320, guid: 50bbcb2e8fb5c472bb949e4336b53eea,
+    type: 2}
+  TankWeeblePrefab: {fileID: 1860630371194776, guid: df97b17fdbf7c4d0c9d5e91f9c8edc60,
+    type: 2}
+  RangedWeeblePrefab: {fileID: 1102014206322316, guid: 4057f3e6d837c4b289f7eec449f62720,
+    type: 2}
+  Location1: {fileID: 1844438658}
+  Location2: {fileID: 812981478}
+  Location3: {fileID: 335588352}
+  Location4: {fileID: 697546580}
+  Location5: {fileID: 886907714}
 --- !u!1 &335588351
 GameObject:
   m_ObjectHideFlags: 0

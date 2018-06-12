@@ -37,6 +37,7 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 4262307136785426}
+  - component: {fileID: 114337582294687124}
   m_Layer: 0
   m_Name: Melee Weeble
   m_TagString: Untagged
@@ -113,6 +114,17 @@ MeshFilter:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1278822500849630}
   m_Mesh: {fileID: 10208, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &114337582294687124
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1809620607006874}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 44f5a1be845204d498c3f487a9d8371b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!136 &136070336740887836
 CapsuleCollider:
   m_ObjectHideFlags: 1
