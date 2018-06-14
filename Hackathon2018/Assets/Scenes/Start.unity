@@ -140,7 +140,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4e217ceba28d043f6bf7b70493c06f04, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  TeamWeeble: 0
   WeebleDirection: 1
   MeleeWeeblePrefab: {fileID: 1809620607006874, guid: bae30d45da62b477da88a55961786359,
     type: 2}
@@ -166,7 +165,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 7
+  m_RootOrder: 12
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &183366925
 GameObject:
@@ -236,7 +235,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4e217ceba28d043f6bf7b70493c06f04, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  TeamWeeble: 1
   WeebleDirection: 0
   MeleeWeeblePrefab: {fileID: 1809620607006874, guid: bae30d45da62b477da88a55961786359,
     type: 2}
@@ -277,7 +275,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 10
+  m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &409479746
 GameObject:
@@ -426,7 +424,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 11
+  m_RootOrder: 10
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &812981477
 GameObject:
@@ -454,7 +452,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 9
+  m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &886907713
 GameObject:
@@ -482,7 +480,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 12
+  m_RootOrder: 11
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1527546068
 GameObject:
@@ -619,7 +617,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 8
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1992263326
 GameObject:
