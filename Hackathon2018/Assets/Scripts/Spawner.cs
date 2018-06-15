@@ -38,5 +38,4 @@ public class Spawner : MonoBehaviour
 		WeebleMover mover = weeble.GetComponent<WeebleMover>();
 		mover.Init(WeebleDirection);
 	}
-
 }

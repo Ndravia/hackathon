@@ -21,7 +21,6 @@ GameObject:
   - component: {fileID: 4824334692567480}
   - component: {fileID: 33944938103060012}
   - component: {fileID: 23662817795982220}
-  - component: {fileID: 135027936966727582}
   m_Layer: 0
   m_Name: Model
   m_TagString: Untagged
@@ -39,6 +38,7 @@ GameObject:
   - component: {fileID: 4295589736760492}
   - component: {fileID: 114709424351002070}
   - component: {fileID: 54183776972437946}
+  - component: {fileID: 135291183867116978}
   m_Layer: 0
   m_Name: Healer Weeble
   m_TagString: Untagged
@@ -141,17 +141,21 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 44f5a1be845204d498c3f487a9d8371b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  velocity: 1
+  velocity: 3
   Health: 75
   Damage: 1
   CoolDown: 1.5
   IsDead: 0
---- !u!135 &135027936966727582
+  FullHealth: {r: 0, g: 1, b: 0, a: 1}
+  MediumHealth: {r: 1, g: 0.92156863, b: 0.015686275, a: 1}
+  LowHealth: {r: 1, g: 0, b: 0, a: 1}
+  ModelRenderer: {fileID: 23662817795982220}
+--- !u!135 &135291183867116978
 SphereCollider:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1686035992044058}
+  m_GameObject: {fileID: 1982337101655320}
   m_Material: {fileID: 0}
   m_IsTrigger: 1
   m_Enabled: 1

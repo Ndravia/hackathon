@@ -21,6 +21,7 @@ GameObject:
   - component: {fileID: 4009927760954842}
   - component: {fileID: 114327153736437536}
   - component: {fileID: 54857346323143588}
+  - component: {fileID: 136483456152615724}
   m_Layer: 0
   m_Name: Ranged Weeble
   m_TagString: Untagged
@@ -38,7 +39,6 @@ GameObject:
   - component: {fileID: 4124176990137918}
   - component: {fileID: 33082790979449756}
   - component: {fileID: 23591418818063302}
-  - component: {fileID: 136531722284835170}
   m_Layer: 0
   m_Name: Model
   m_TagString: Untagged
@@ -53,7 +53,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1102014206322316}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 23.319809, y: 36.215782, z: -56.782722}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 4124176990137918}
@@ -141,21 +141,25 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 44f5a1be845204d498c3f487a9d8371b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  velocity: 4
+  velocity: 3
   Health: 80
   Damage: 8
   CoolDown: 1.5
   IsDead: 0
---- !u!136 &136531722284835170
+  FullHealth: {r: 0, g: 1, b: 0, a: 1}
+  MediumHealth: {r: 1, g: 0.92156863, b: 0.015686275, a: 1}
+  LowHealth: {r: 1, g: 0, b: 0, a: 1}
+  ModelRenderer: {fileID: 23591418818063302}
+--- !u!136 &136483456152615724
 CapsuleCollider:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1887759151616846}
+  m_GameObject: {fileID: 1102014206322316}
   m_Material: {fileID: 0}
   m_IsTrigger: 1
   m_Enabled: 1
-  m_Radius: 0.5000001
+  m_Radius: 0.5
   m_Height: 2
-  m_Direction: 1
-  m_Center: {x: 0.000000059604645, y: 0, z: -0.00000008940697}
+  m_Direction: 2
+  m_Center: {x: 0, y: 0, z: 0}

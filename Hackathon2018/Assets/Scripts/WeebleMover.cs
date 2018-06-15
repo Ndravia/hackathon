@@ -7,14 +7,24 @@ public class WeebleMover : MonoBehaviour
 	public int Damage = 1;
 	public float CoolDown = 1.5f;
 	public bool IsDead = false;
-		
+	public Color FullHealth = Color.green;
+	public Color MediumHealth = Color.yellow;
+	public Color LowHealth = Color.red;
+	public Renderer ModelRenderer;
+
+	private int MaxHealth;
 	private WeebleMover _enemyWeeble;
 	private Vector3 _direction;
 	private float _timer;
 
+	private void Start()
+	{
+		MaxHealth = Health;
+		SetColor(FullHealth);
+	}
 	private void OnTriggerEnter(Collider other)
 	{
-		_enemyWeeble = other.transform.parent.gameObject.GetComponent<WeebleMover>();
+		_enemyWeeble = other.gameObject.GetComponent<WeebleMover>();
 	}	
 
 	// Update is called once per frame
@@ -58,6 +68,9 @@ public class WeebleMover : MonoBehaviour
 			IsDead = true;
 			Debug.Log("A Weeble Has Died!");
 		}
+
+		Color NewColor = GetHealthColor();
+		SetColor(NewColor);
 	}
 	
 	public void Init(Spawner.Direction d)
@@ -69,6 +82,29 @@ public class WeebleMover : MonoBehaviour
 		else
 		{
 			_direction = Vector3.forward;
+		}
+	}
+
+	public void SetColor(Color color)
+	{
+		ModelRenderer.material.color = color;
+	}
+
+	public Color GetHealthColor()
+	{
+		float Percent = (float)Health / (float)MaxHealth;
+
+		if (Percent <= 0.25)
+		{
+			return LowHealth;
+		}
+		else if (Percent <= 0.5)
+		{
+			return MediumHealth;
+		}
+		else
+		{
+			return FullHealth;
 		}
 	}
 }

@@ -21,7 +21,6 @@ GameObject:
   - component: {fileID: 4092503824672514}
   - component: {fileID: 33454877606707538}
   - component: {fileID: 23546431721383846}
-  - component: {fileID: 65579643655913948}
   m_Layer: 0
   m_Name: Model
   m_TagString: Untagged
@@ -39,6 +38,7 @@ GameObject:
   - component: {fileID: 4602528829056618}
   - component: {fileID: 114624926237399658}
   - component: {fileID: 54559710024623696}
+  - component: {fileID: 65634929583052714}
   m_Layer: 0
   m_Name: Tank Weeble
   m_TagString: Untagged
@@ -130,12 +130,12 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
---- !u!65 &65579643655913948
+--- !u!65 &65634929583052714
 BoxCollider:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1493094625148062}
+  m_GameObject: {fileID: 1860630371194776}
   m_Material: {fileID: 0}
   m_IsTrigger: 1
   m_Enabled: 1
@@ -153,8 +153,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 44f5a1be845204d498c3f487a9d8371b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  velocity: 1
+  velocity: 3
   Health: 125
   Damage: 3
   CoolDown: 1
   IsDead: 0
+  FullHealth: {r: 0, g: 1, b: 0, a: 1}
+  MediumHealth: {r: 1, g: 0.92156863, b: 0.015686275, a: 1}
+  LowHealth: {r: 1, g: 0, b: 0, a: 1}
+  ModelRenderer: {fileID: 23546431721383846}
