@@ -1,4 +1,5 @@
-﻿using UnityEngine;
+﻿using JetBrains.Annotations;
+using UnityEngine;
 
 public class WeebleMover : MonoBehaviour
 {
@@ -12,6 +13,7 @@ public class WeebleMover : MonoBehaviour
 	public Color LowHealth = Color.red;
 	public Renderer ModelRenderer;
 
+	public Team WeebleTeam;
 	private int MaxHealth;
 	private WeebleMover _enemyWeeble;
 	private Vector3 _direction;
@@ -24,7 +26,11 @@ public class WeebleMover : MonoBehaviour
 	}
 	private void OnTriggerEnter(Collider other)
 	{
-		_enemyWeeble = other.gameObject.GetComponent<WeebleMover>();
+		WeebleMover Weeble = other.gameObject.GetComponent<WeebleMover>();
+		if (Weeble != null && Weeble.WeebleTeam != WeebleTeam)
+		{
+			_enemyWeeble = Weeble;
+		}
 	}	
 
 	// Update is called once per frame
@@ -73,9 +79,10 @@ public class WeebleMover : MonoBehaviour
 		SetColor(NewColor);
 	}
 	
-	public void Init(Spawner.Direction d)
+	public void Init(Direction d, Team t)
 	{
-		if (d == Spawner.Direction.back)
+		WeebleTeam = t;
+		if (d == Direction.back)
 		{
 			_direction = Vector3.back;
 		}
@@ -92,19 +99,31 @@ public class WeebleMover : MonoBehaviour
 
 	public Color GetHealthColor()
 	{
+		float FullHealthThreshold = 1f;
+		float MediumHealthThreshold = 0.5f;
+		float LowHealthThreshold = 0.25f;
 		float Percent = (float)Health / (float)MaxHealth;
-
-		if (Percent <= 0.25)
+		Color NewColor;
+		
+		if (Percent > MediumHealthThreshold)
 		{
-			return LowHealth;
-		}
-		else if (Percent <= 0.5)
-		{
-			return MediumHealth;
+			float MaxPercent = (Percent - MediumHealthThreshold) / (FullHealthThreshold - MediumHealthThreshold);
+			float MidPercent = (1 - MaxPercent);
+		
+			NewColor = new Color((FullHealth.r * MaxPercent) + (MediumHealth.r * MidPercent), 
+				(FullHealth.g * MaxPercent) + (MediumHealth.g * MidPercent),
+				(FullHealth.b * MaxPercent) + (MediumHealth.b * MidPercent));
 		}
 		else
 		{
-			return FullHealth;
+			float MidPercent = (Percent - LowHealthThreshold) / (MediumHealthThreshold - LowHealthThreshold);
+			float LowPercent = (1 - MidPercent);
+		
+			NewColor = new Color((MediumHealth.r * MidPercent) + (LowHealth.r * LowPercent), 
+				(MediumHealth.g * MidPercent) + (LowHealth.g * LowPercent),
+				(MediumHealth.b * MidPercent) + (LowHealth.b * LowPercent));
 		}
+		//return NewColor;
+		return Color.Lerp(Color.red, Color.green, Percent);
 	}
 }

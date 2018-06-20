@@ -113,60 +113,117 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
---- !u!1 &118543491
+--- !u!1 &15964385
 GameObject:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   serializedVersion: 5
   m_Component:
-  - component: {fileID: 118543493}
-  - component: {fileID: 118543492}
-  m_Layer: 0
-  m_Name: Spawner A
+  - component: {fileID: 15964386}
+  - component: {fileID: 15964389}
+  - component: {fileID: 15964388}
+  - component: {fileID: 15964387}
+  m_Layer: 5
+  m_Name: StartButton
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &118543492
+--- !u!224 &15964386
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 15964385}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 1390719102}
+  m_Father: {fileID: 519076705}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 160, y: 30}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &15964387
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 118543491}
+  m_GameObject: {fileID: 15964385}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4e217ceba28d043f6bf7b70493c06f04, type: 3}
+  m_Script: {fileID: 1392445389, guid: f5f67c52d1564df4a8936ccd202a3bd8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  WeebleDirection: 1
-  MeleeWeeblePrefab: {fileID: 1809620607006874, guid: bae30d45da62b477da88a55961786359,
-    type: 2}
-  HealerWeeblePrefab: {fileID: 1982337101655320, guid: 50bbcb2e8fb5c472bb949e4336b53eea,
-    type: 2}
-  TankWeeblePrefab: {fileID: 1860630371194776, guid: df97b17fdbf7c4d0c9d5e91f9c8edc60,
-    type: 2}
-  RangedWeeblePrefab: {fileID: 1102014206322316, guid: 4057f3e6d837c4b289f7eec449f62720,
-    type: 2}
-  Location1: {fileID: 183366926}
-  Location2: {fileID: 409479747}
-  Location3: {fileID: 425541927}
-  Location4: {fileID: 1992263327}
-  Location5: {fileID: 1787757322}
---- !u!4 &118543493
-Transform:
+  m_Navigation:
+    m_Mode: 3
+    m_SelectOnUp: {fileID: 0}
+    m_SelectOnDown: {fileID: 0}
+    m_SelectOnLeft: {fileID: 0}
+    m_SelectOnRight: {fileID: 0}
+  m_Transition: 1
+  m_Colors:
+    m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
+    m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
+    m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
+    m_ColorMultiplier: 1
+    m_FadeDuration: 0.1
+  m_SpriteState:
+    m_HighlightedSprite: {fileID: 0}
+    m_PressedSprite: {fileID: 0}
+    m_DisabledSprite: {fileID: 0}
+  m_AnimationTriggers:
+    m_NormalTrigger: Normal
+    m_HighlightedTrigger: Highlighted
+    m_PressedTrigger: Pressed
+    m_DisabledTrigger: Disabled
+  m_Interactable: 1
+  m_TargetGraphic: {fileID: 15964388}
+  m_OnClick:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
+      Culture=neutral, PublicKeyToken=null
+--- !u!114 &15964388
+MonoBehaviour:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 118543491}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 12
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_GameObject: {fileID: 15964385}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -765806418, guid: f5f67c52d1564df4a8936ccd202a3bd8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
+      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+  m_Sprite: {fileID: 10905, guid: 0000000000000000f000000000000000, type: 0}
+  m_Type: 1
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+--- !u!222 &15964389
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 15964385}
 --- !u!1 &183366925
 GameObject:
   m_ObjectHideFlags: 0
@@ -175,6 +232,7 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 183366926}
+  - component: {fileID: 183366927}
   m_Layer: 0
   m_Name: Spawn Location A 1
   m_TagString: Untagged
@@ -195,60 +253,88 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &188373151
+--- !u!114 &183366927
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 183366925}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4e217ceba28d043f6bf7b70493c06f04, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  WeebleTeam: 0
+  WeebleDirection: 1
+  Weebles:
+  - {fileID: 1809620607006874, guid: bae30d45da62b477da88a55961786359, type: 2}
+  - {fileID: 1860630371194776, guid: df97b17fdbf7c4d0c9d5e91f9c8edc60, type: 2}
+  - {fileID: 1982337101655320, guid: 50bbcb2e8fb5c472bb949e4336b53eea, type: 2}
+  - {fileID: 1102014206322316, guid: 4057f3e6d837c4b289f7eec449f62720, type: 2}
+  - {fileID: 1809620607006874, guid: bae30d45da62b477da88a55961786359, type: 2}
+  SpawnTimer: 2
+--- !u!1 &265153328
 GameObject:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   serializedVersion: 5
   m_Component:
-  - component: {fileID: 188373152}
-  - component: {fileID: 188373153}
+  - component: {fileID: 265153331}
+  - component: {fileID: 265153330}
+  - component: {fileID: 265153329}
   m_Layer: 0
-  m_Name: Spawner B
+  m_Name: EventSystem
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &188373152
-Transform:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 188373151}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 3, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 13
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &188373153
+--- !u!114 &265153329
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 188373151}
+  m_GameObject: {fileID: 265153328}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4e217ceba28d043f6bf7b70493c06f04, type: 3}
+  m_Script: {fileID: 1077351063, guid: f5f67c52d1564df4a8936ccd202a3bd8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  WeebleDirection: 0
-  MeleeWeeblePrefab: {fileID: 1809620607006874, guid: bae30d45da62b477da88a55961786359,
-    type: 2}
-  HealerWeeblePrefab: {fileID: 1982337101655320, guid: 50bbcb2e8fb5c472bb949e4336b53eea,
-    type: 2}
-  TankWeeblePrefab: {fileID: 1860630371194776, guid: df97b17fdbf7c4d0c9d5e91f9c8edc60,
-    type: 2}
-  RangedWeeblePrefab: {fileID: 1102014206322316, guid: 4057f3e6d837c4b289f7eec449f62720,
-    type: 2}
-  Location1: {fileID: 1844438658}
-  Location2: {fileID: 812981478}
-  Location3: {fileID: 335588352}
-  Location4: {fileID: 697546580}
-  Location5: {fileID: 886907714}
+  m_HorizontalAxis: Horizontal
+  m_VerticalAxis: Vertical
+  m_SubmitButton: Submit
+  m_CancelButton: Cancel
+  m_InputActionsPerSecond: 10
+  m_RepeatDelay: 0.5
+  m_ForceModuleActive: 0
+--- !u!114 &265153330
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 265153328}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -619905303, guid: f5f67c52d1564df4a8936ccd202a3bd8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_FirstSelected: {fileID: 0}
+  m_sendNavigationEvents: 1
+  m_DragThreshold: 10
+--- !u!4 &265153331
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 265153328}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 15
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &335588351
 GameObject:
   m_ObjectHideFlags: 0
@@ -257,6 +343,7 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 335588352}
+  - component: {fileID: 335588353}
   m_Layer: 0
   m_Name: Spawn Location B 3
   m_TagString: Untagged
@@ -277,6 +364,26 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &335588353
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 335588351}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4e217ceba28d043f6bf7b70493c06f04, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  WeebleTeam: 1
+  WeebleDirection: 0
+  Weebles:
+  - {fileID: 1809620607006874, guid: bae30d45da62b477da88a55961786359, type: 2}
+  - {fileID: 1860630371194776, guid: df97b17fdbf7c4d0c9d5e91f9c8edc60, type: 2}
+  - {fileID: 1982337101655320, guid: 50bbcb2e8fb5c472bb949e4336b53eea, type: 2}
+  - {fileID: 1102014206322316, guid: 4057f3e6d837c4b289f7eec449f62720, type: 2}
+  - {fileID: 1809620607006874, guid: bae30d45da62b477da88a55961786359, type: 2}
+  SpawnTimer: 2
 --- !u!1 &409479746
 GameObject:
   m_ObjectHideFlags: 0
@@ -285,6 +392,7 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 409479747}
+  - component: {fileID: 409479748}
   m_Layer: 0
   m_Name: Spawn Location A 2
   m_TagString: Untagged
@@ -305,6 +413,26 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &409479748
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 409479746}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4e217ceba28d043f6bf7b70493c06f04, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  WeebleTeam: 0
+  WeebleDirection: 1
+  Weebles:
+  - {fileID: 1809620607006874, guid: bae30d45da62b477da88a55961786359, type: 2}
+  - {fileID: 1860630371194776, guid: df97b17fdbf7c4d0c9d5e91f9c8edc60, type: 2}
+  - {fileID: 1982337101655320, guid: 50bbcb2e8fb5c472bb949e4336b53eea, type: 2}
+  - {fileID: 1102014206322316, guid: 4057f3e6d837c4b289f7eec449f62720, type: 2}
+  - {fileID: 1809620607006874, guid: bae30d45da62b477da88a55961786359, type: 2}
+  SpawnTimer: 2
 --- !u!1 &425541926
 GameObject:
   m_ObjectHideFlags: 0
@@ -313,6 +441,7 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 425541927}
+  - component: {fileID: 425541928}
   m_Layer: 0
   m_Name: Spawn Location A 3
   m_TagString: Untagged
@@ -333,6 +462,26 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &425541928
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 425541926}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4e217ceba28d043f6bf7b70493c06f04, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  WeebleTeam: 0
+  WeebleDirection: 1
+  Weebles:
+  - {fileID: 1809620607006874, guid: bae30d45da62b477da88a55961786359, type: 2}
+  - {fileID: 1860630371194776, guid: df97b17fdbf7c4d0c9d5e91f9c8edc60, type: 2}
+  - {fileID: 1982337101655320, guid: 50bbcb2e8fb5c472bb949e4336b53eea, type: 2}
+  - {fileID: 1102014206322316, guid: 4057f3e6d837c4b289f7eec449f62720, type: 2}
+  - {fileID: 1809620607006874, guid: bae30d45da62b477da88a55961786359, type: 2}
+  SpawnTimer: 2
 --- !u!1 &459395005
 GameObject:
   m_ObjectHideFlags: 0
@@ -417,7 +566,7 @@ Transform:
   m_LocalScale: {x: 40, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 14
+  m_RootOrder: 12
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &459395010
 MonoBehaviour:
@@ -431,6 +580,100 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Points: 0
+--- !u!1 &519076701
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 519076705}
+  - component: {fileID: 519076704}
+  - component: {fileID: 519076703}
+  - component: {fileID: 519076702}
+  m_Layer: 5
+  m_Name: Canvas
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!114 &519076702
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 519076701}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1301386320, guid: f5f67c52d1564df4a8936ccd202a3bd8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_IgnoreReversedGraphics: 1
+  m_BlockingObjects: 0
+  m_BlockingMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
+--- !u!114 &519076703
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 519076701}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1980459831, guid: f5f67c52d1564df4a8936ccd202a3bd8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_UiScaleMode: 0
+  m_ReferencePixelsPerUnit: 100
+  m_ScaleFactor: 1
+  m_ReferenceResolution: {x: 800, y: 600}
+  m_ScreenMatchMode: 0
+  m_MatchWidthOrHeight: 0
+  m_PhysicalUnit: 3
+  m_FallbackScreenDPI: 96
+  m_DefaultSpriteDPI: 96
+  m_DynamicPixelsPerUnit: 1
+--- !u!223 &519076704
+Canvas:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 519076701}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_RenderMode: 0
+  m_Camera: {fileID: 0}
+  m_PlaneDistance: 100
+  m_PixelPerfect: 0
+  m_ReceivesEvents: 1
+  m_OverrideSorting: 0
+  m_OverridePixelPerfect: 0
+  m_SortingBucketNormalizedSize: 0
+  m_AdditionalShaderChannelsFlag: 0
+  m_SortingLayerID: 0
+  m_SortingOrder: 0
+  m_TargetDisplay: 0
+--- !u!224 &519076705
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 519076701}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 0, y: 0, z: 0}
+  m_Children:
+  - {fileID: 15964386}
+  m_Father: {fileID: 0}
+  m_RootOrder: 14
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
+  m_Pivot: {x: 0, y: 0}
 --- !u!1 &572115712
 GameObject:
   m_ObjectHideFlags: 0
@@ -504,6 +747,7 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 697546580}
+  - component: {fileID: 697546581}
   m_Layer: 0
   m_Name: Spawn Location B 4
   m_TagString: Untagged
@@ -524,6 +768,26 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 10
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &697546581
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 697546579}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4e217ceba28d043f6bf7b70493c06f04, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  WeebleTeam: 1
+  WeebleDirection: 0
+  Weebles:
+  - {fileID: 1809620607006874, guid: bae30d45da62b477da88a55961786359, type: 2}
+  - {fileID: 1860630371194776, guid: df97b17fdbf7c4d0c9d5e91f9c8edc60, type: 2}
+  - {fileID: 1982337101655320, guid: 50bbcb2e8fb5c472bb949e4336b53eea, type: 2}
+  - {fileID: 1102014206322316, guid: 4057f3e6d837c4b289f7eec449f62720, type: 2}
+  - {fileID: 1809620607006874, guid: bae30d45da62b477da88a55961786359, type: 2}
+  SpawnTimer: 2
 --- !u!1 &812981477
 GameObject:
   m_ObjectHideFlags: 0
@@ -532,6 +796,7 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 812981478}
+  - component: {fileID: 812981479}
   m_Layer: 0
   m_Name: Spawn Location B 2
   m_TagString: Untagged
@@ -552,6 +817,26 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &812981479
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 812981477}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4e217ceba28d043f6bf7b70493c06f04, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  WeebleTeam: 1
+  WeebleDirection: 0
+  Weebles:
+  - {fileID: 1809620607006874, guid: bae30d45da62b477da88a55961786359, type: 2}
+  - {fileID: 1860630371194776, guid: df97b17fdbf7c4d0c9d5e91f9c8edc60, type: 2}
+  - {fileID: 1982337101655320, guid: 50bbcb2e8fb5c472bb949e4336b53eea, type: 2}
+  - {fileID: 1102014206322316, guid: 4057f3e6d837c4b289f7eec449f62720, type: 2}
+  - {fileID: 1809620607006874, guid: bae30d45da62b477da88a55961786359, type: 2}
+  SpawnTimer: 2
 --- !u!1 &886907713
 GameObject:
   m_ObjectHideFlags: 0
@@ -560,6 +845,7 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 886907714}
+  - component: {fileID: 886907715}
   m_Layer: 0
   m_Name: Spawn Location B 5
   m_TagString: Untagged
@@ -580,6 +866,26 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 11
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &886907715
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 886907713}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4e217ceba28d043f6bf7b70493c06f04, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  WeebleTeam: 1
+  WeebleDirection: 0
+  Weebles:
+  - {fileID: 1809620607006874, guid: bae30d45da62b477da88a55961786359, type: 2}
+  - {fileID: 1860630371194776, guid: df97b17fdbf7c4d0c9d5e91f9c8edc60, type: 2}
+  - {fileID: 1982337101655320, guid: 50bbcb2e8fb5c472bb949e4336b53eea, type: 2}
+  - {fileID: 1102014206322316, guid: 4057f3e6d837c4b289f7eec449f62720, type: 2}
+  - {fileID: 1809620607006874, guid: bae30d45da62b477da88a55961786359, type: 2}
+  SpawnTimer: 2
 --- !u!1 &1371673129
 GameObject:
   m_ObjectHideFlags: 0
@@ -664,7 +970,7 @@ Transform:
   m_LocalScale: {x: 40, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 15
+  m_RootOrder: 13
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1371673134
 MonoBehaviour:
@@ -678,6 +984,80 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Points: 0
+--- !u!1 &1390719101
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 1390719102}
+  - component: {fileID: 1390719104}
+  - component: {fileID: 1390719103}
+  m_Layer: 5
+  m_Name: Text
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1390719102
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1390719101}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 15964386}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 1}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1390719103
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1390719101}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 708705254, guid: f5f67c52d1564df4a8936ccd202a3bd8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 0.9622642, g: 0.004538993, b: 0.7067893, a: 1}
+  m_RaycastTarget: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
+      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+  m_FontData:
+    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
+    m_FontSize: 18
+    m_FontStyle: 1
+    m_BestFit: 0
+    m_MinSize: 1
+    m_MaxSize: 40
+    m_Alignment: 4
+    m_AlignByGeometry: 0
+    m_RichText: 1
+    m_HorizontalOverflow: 0
+    m_VerticalOverflow: 0
+    m_LineSpacing: 1
+  m_Text: \o/ Start! \o/
+--- !u!222 &1390719104
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1390719101}
 --- !u!1 &1527546068
 GameObject:
   m_ObjectHideFlags: 0
@@ -767,6 +1147,7 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 1787757322}
+  - component: {fileID: 1787757323}
   m_Layer: 0
   m_Name: Spawn Location A 5
   m_TagString: Untagged
@@ -787,6 +1168,26 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1787757323
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1787757321}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4e217ceba28d043f6bf7b70493c06f04, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  WeebleTeam: 0
+  WeebleDirection: 1
+  Weebles:
+  - {fileID: 1809620607006874, guid: bae30d45da62b477da88a55961786359, type: 2}
+  - {fileID: 1860630371194776, guid: df97b17fdbf7c4d0c9d5e91f9c8edc60, type: 2}
+  - {fileID: 1982337101655320, guid: 50bbcb2e8fb5c472bb949e4336b53eea, type: 2}
+  - {fileID: 1102014206322316, guid: 4057f3e6d837c4b289f7eec449f62720, type: 2}
+  - {fileID: 1809620607006874, guid: bae30d45da62b477da88a55961786359, type: 2}
+  SpawnTimer: 2
 --- !u!1 &1844438657
 GameObject:
   m_ObjectHideFlags: 0
@@ -795,6 +1196,7 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 1844438658}
+  - component: {fileID: 1844438659}
   m_Layer: 0
   m_Name: Spawn Location B 1
   m_TagString: Untagged
@@ -815,6 +1217,26 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1844438659
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1844438657}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4e217ceba28d043f6bf7b70493c06f04, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  WeebleTeam: 1
+  WeebleDirection: 0
+  Weebles:
+  - {fileID: 1809620607006874, guid: bae30d45da62b477da88a55961786359, type: 2}
+  - {fileID: 1860630371194776, guid: df97b17fdbf7c4d0c9d5e91f9c8edc60, type: 2}
+  - {fileID: 1982337101655320, guid: 50bbcb2e8fb5c472bb949e4336b53eea, type: 2}
+  - {fileID: 1102014206322316, guid: 4057f3e6d837c4b289f7eec449f62720, type: 2}
+  - {fileID: 1809620607006874, guid: bae30d45da62b477da88a55961786359, type: 2}
+  SpawnTimer: 2
 --- !u!1 &1992263326
 GameObject:
   m_ObjectHideFlags: 0
@@ -823,6 +1245,7 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 1992263327}
+  - component: {fileID: 1992263328}
   m_Layer: 0
   m_Name: Spawn Location A 4
   m_TagString: Untagged
@@ -843,3 +1266,23 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1992263328
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1992263326}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4e217ceba28d043f6bf7b70493c06f04, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  WeebleTeam: 0
+  WeebleDirection: 1
+  Weebles:
+  - {fileID: 1809620607006874, guid: bae30d45da62b477da88a55961786359, type: 2}
+  - {fileID: 1860630371194776, guid: df97b17fdbf7c4d0c9d5e91f9c8edc60, type: 2}
+  - {fileID: 1982337101655320, guid: 50bbcb2e8fb5c472bb949e4336b53eea, type: 2}
+  - {fileID: 1102014206322316, guid: 4057f3e6d837c4b289f7eec449f62720, type: 2}
+  - {fileID: 1809620607006874, guid: bae30d45da62b477da88a55961786359, type: 2}
+  SpawnTimer: 2
